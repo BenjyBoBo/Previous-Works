@@ -7,7 +7,7 @@
 #include "p0-intro.h"
 #include <math.h>
 
-int add_abs (int num1, int nums2) {
+int add_abs (int num1, int num2) {
     return abs(num1) + abs(num2);
 }
 

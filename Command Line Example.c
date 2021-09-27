@@ -1,4 +1,4 @@
-/* CS 261: Project 0 driver
+/* Command Line Example
  *
  * Name: Ben Carthron
  */
