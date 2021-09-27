@@ -31,17 +31,6 @@ bool is_prime (int num) {
     return true;
 }
 
-vector_t add_vec (vector_t v1, vector_t v2) {
-    vector ans;
-    ans.x = v1.x + v2.x;
-    ans.y = v1.y + v2.y;
-    return ans;
-}
-
-double dot_prod_vec (vector v1, vector v2) {
-    return (v1.x * v2.x) + (v1.y * v2.y);
-}
-
 int sum_array (int *nums, size_t n) {
     int i, sum = 0;
     if (nums == NULL || n == 0) return 0;
