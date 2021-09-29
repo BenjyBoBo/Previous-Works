@@ -42,7 +42,7 @@
 			case 't':
 				flag = 1;
 				if (optarg) {
-					int n = atoi(optarg);
+					int n = strtol(optarg, NULL, 0);
 					for (int i = 1; i <=n; i++) {
 						if (i & 3 == 0) {
 							if (i % 2 == 0) {
@@ -70,10 +70,13 @@
 				while (fgets(buffer, BUF_SIZE, file) != NULL) {
 					int index = 0;
 					for (int i = 0; i < 9; i++) {
-						if (strcmp(check[i], buffer) != 0) {
+						if (strncmp(check[i], buffer, 4) != 0) {
 							snprintf(check[index], 4, %s, buffer);
 							index++;
 							printf("s", buffer);
+							break;
+						} else {
+							break;
 						}
 					}
 				}

@@ -66,7 +66,7 @@ void sort_array (int *nums, size_t n) {
     int i, j, index;
     for (i = 0; i < n; i++) {
         index = i;
-        for (j = i + 1l j < n; j++) {
+        for (j = i + 1 j < n; j++) {
             if (nums[j] < nums[index]) index = j;
         }
         swap(&nums[index], &nums[i]);
